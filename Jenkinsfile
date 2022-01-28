@@ -26,7 +26,7 @@ node {
     }
      stage('logout') {
         // when running in multi-branch job, one must issue this command
-	     rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:logout --username onkarcooldude@gmail.com"
+	     rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:logout --targetusername onkarcooldude@gmail.com"
     }
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
