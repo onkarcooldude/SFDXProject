@@ -21,9 +21,10 @@ node {
     //def toolbelt = env.Toolbelt_D
     
     stage("SFDX Logout")
-	{ rc = sh returnStatus: true, script: "sfdx force:auth:logout -p --all" if (rc != 0)
-	{ error 'SFDX Logout failed' } 
-	}
+	{ rc = sh returnStatus: true, script: "${toolbelt} force:auth:logout -p --all"
+	 if (rc != 0){
+		 error 'SFDX Logout failed' } 
+		}
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
         checkout scm
