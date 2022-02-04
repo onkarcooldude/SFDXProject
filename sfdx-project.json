@@ -1,11 +1,17 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
-    }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "45.0"
+"orgName": "Salesforce Developer",
+"edition": "Developer",
+"hasSampleData": "true",
+"features": ["MultiCurrency","DeferSharingCalc","PersonAccounts"],
+"settings": {
+      "mobileSettings": {
+          "enableS1EncryptedStoragePref2": true
+      },
+      "omniChannelSettings": {
+          "enableOmniChannel": true
+      },
+      "caseSettings": {
+          "systemUserEmail": "sample@gmail.com"
+      }
+  }
 }
