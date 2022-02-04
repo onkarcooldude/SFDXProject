@@ -49,6 +49,7 @@ node {
 				rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy -p SFDXProject/force-app -u ${HUB_ORG}"
 				rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy -p SFDXProject/manifest -u ${HUB_ORG}"
 				rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy -p SFDXProject/force-app -u ${HUB_ORG}"
+				echo "Current workspace is $WORKSPACE"
 				
 			}
 			  
