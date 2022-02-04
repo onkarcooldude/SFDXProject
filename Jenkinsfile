@@ -45,7 +45,7 @@ node {
 			}else{
 			   //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:push --json --targetusername ${HUB_ORG}"
-				rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:org:create -s -f config/project-scratch-def.json --username ${HUB_ORG}
+				rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:org:create -s -f config/project-scratch-def.json --targetusername ${HUB_ORG}"
 			}
 			  
             printf rmsg
