@@ -1,4 +1,10 @@
 #!groovy
+@Library('sfdx-core-ci-lib')
+import SfdxProjectBuilder
+new SfdxProjectBuilder(this)
+		.setScratchOrgDefFile('config/rstk-min-edition-developer-project-scratch-def.json')
+		.setSlackChannelToNotify('#banksy-dev')
+		.execute()
 import groovy.json.JsonSlurperClassic
 node {
 
