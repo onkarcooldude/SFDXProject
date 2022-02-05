@@ -1,5 +1,5 @@
 #!groovy
-@Library('sfdx-core-ci-lib')
+@Library('sfdx-core-ci-lib') _
 import SfdxProjectBuilder
 new SfdxProjectBuilder(this)
 		.setScratchOrgDefFile('config/rstk-min-edition-developer-project-scratch-def.json')
