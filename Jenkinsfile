@@ -1,10 +1,10 @@
 //#!groovy
 //@Library('sfdx-core-ci-lib') _
 //import SfdxProjectBuilder
-new SfdxProjectBuilder(this)
-		.setScratchOrgDefFile('config/project-scratch-def.json')
-		.execute()
-import groovy.json.JsonSlurperClassic
+//new SfdxProjectBuilder(this)
+//		.setScratchOrgDefFile('config/project-scratch-def.json')
+//		.execute()
+//import groovy.json.JsonSlurperClassic
 node {
 
     def BUILD_NUMBER=env.BUILD_NUMBER
