@@ -1,6 +1,6 @@
-#!groovy
-@Library('sfdx-core-ci-lib') _
-import SfdxProjectBuilder
+//#!groovy
+//@Library('sfdx-core-ci-lib') _
+//import SfdxProjectBuilder
 new SfdxProjectBuilder(this)
 		.setScratchOrgDefFile('config/project-scratch-def.json')
 		.execute()
